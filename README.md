@@ -50,6 +50,7 @@ Fourth line checks if the Flash element contains the text "You have entered the 
 - Add test case name in first "it" parameters. Write 'login with not valid credentials'
 - In the second "it" parameter add a test step after each comment.
     
+    ```js
     it('', ()=>{
 
         // 1. Open LoginPage
@@ -61,5 +62,6 @@ Fourth line checks if the Flash element contains the text "You have entered the 
         // 4. Сheck that the Flash element contains error message 
 
     })
+    ```
     
 - Run test
