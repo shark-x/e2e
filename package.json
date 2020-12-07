@@ -23,9 +23,7 @@
     "@wdio/mocha-framework": "^6.10.4",
     "@wdio/selenium-standalone-service": "^6.10.4",
     "@wdio/spec-reporter": "^6.8.1",
+    "@wdio/sync": "^6.10.4",
     "chai": "^4.2.0"
-  },
-  "dependencies": {
-    "@wdio/sync": "^6.10.4"
   }
 }
