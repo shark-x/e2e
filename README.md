@@ -25,18 +25,19 @@ Run a test case to verify that the installation was successful
 ### Description test case "test/specs/example.e2e.js"
 
 Next code is Test suite "My Login application" witch contains one test "should login with valid credentials". This test case checks succeeded user login.
+```javascript
+describe('My Login application', () => {
 
-    describe('My Login application', () => {
-    
-        it('should login with valid credentials', () => {
-            LoginPage.open();
+    it('should login with valid credentials', () => {
+        LoginPage.open();
 
-            LoginPage.login('tomsmith', 'SuperSecretPassword!');
-            assert(SecurePage.flashAlert.isExisting() === true)
-            assert(SecurePage.flashAlert.getText().includes(`You logged into a secure area!`) === true)
-        });
-
+        LoginPage.login('tomsmith', 'SuperSecretPassword!');
+        assert(SecurePage.flashAlert.isExisting() === true)
+        assert(SecurePage.flashAlert.getText().includes(`You logged into a secure area!`) === true)
     });
+
+});
+```
 
 The first line opens the Login page.
 The second line calls the "Login" method of the "LoginPage" class and passes the login and password parameters to it.
