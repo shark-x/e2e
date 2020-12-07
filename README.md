@@ -26,6 +26,10 @@ Run a test case to verify that the installation was successful
 
 Next code is Test suite "My Login application" witch contains one test "should login with valid credentials". This test case checks succeeded user login.
 ```javascript
+const LoginPage = require('../pageobjects/login.page');
+const SecurePage = require('../pageobjects/secure.page');
+const assert = require('chai').assert
+
 describe('My Login application', () => {
 
     it('should login with valid credentials', () => {
