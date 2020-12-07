@@ -9,7 +9,9 @@ describe('My Login application', () => {
         LoginPage.open();
 
         LoginPage.login('tomsmith', 'SuperSecretPassword!');
+
         assert(SecurePage.flashAlert.isExisting() === true)
+        
         assert(SecurePage.flashAlert.getText().includes(`You logged into a secure area!`) === true)
     });
 
