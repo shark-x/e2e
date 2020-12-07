@@ -19,7 +19,3 @@ Install all dependencies
 Run a test case to verify that the installation was successful
 
     $ npm test
-
-Test merge
-Test merge
-Test merge
