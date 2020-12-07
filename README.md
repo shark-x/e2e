@@ -3,7 +3,7 @@
 This is base environment for fast start to write e2e autotest on node.js and wdio fraemwork
 
 ## Requirements
-Must installed: node.js, chrome|firefox, Java(jre), Python v3
+Must installed: node.js, chrome|firefox, Java(jre)
 
 ## Getting Started
 Clone this repository on your local mashine
