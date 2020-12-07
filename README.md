@@ -36,13 +36,13 @@ describe('My Login application', () => {
     // test case 1
     it('should login with valid credentials', () => {
         
-        LoginPage.open();  // Opens Login Page
+        LoginPage.open();  // Open Login Page
         
-        LoginPage.login('tomsmith', 'SuperSecretPassword!');  // Fills Login form and submit
+        LoginPage.login('tomsmith', 'SuperSecretPassword!');  // Fill Login form and submit
         
-        assert(SecurePage.flashAlert.isExisting() === true)   // Checks for the presence of the Flash element
+        assert(SecurePage.flashAlert.isExisting() === true)   // Check for the presence of the Flash element
         
-        assert(SecurePage.flashAlert.getText().includes(`You logged into a secure area!`) === true)  // Checks the content of a Flash element
+        assert(SecurePage.flashAlert.getText().includes(`You logged into a secure area!`) === true)  // Check the content of a Flash element
     });
 
 });
@@ -51,7 +51,7 @@ describe('My Login application', () => {
 ### Write your first test.
 
 - Open test suite test/specs/example.e2e.js.
-- Uncomment 19-30 lines.
+- Uncomment 20-31 lines.
 - Add test case name in first "it" parameter. Write 'login with not valid credentials'
 - In the second "it" parameter add a test step after each comment.    
 - Run test

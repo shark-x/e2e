@@ -4,16 +4,17 @@ const assert = require('chai').assert
 
 // test suite
 describe('My Login application', () => {
-    
+            
     // test case 1
     it('should login with valid credentials', () => {
-        LoginPage.open();
-
-        LoginPage.login('tomsmith', 'SuperSecretPassword!');
-
-        assert(SecurePage.flashAlert.isExisting() === true)
         
-        assert(SecurePage.flashAlert.getText().includes(`You logged into a secure area!`) === true)
+        LoginPage.open();  // Open Login Page
+        
+        LoginPage.login('tomsmith', 'SuperSecretPassword!');  // Fill Login form and submit
+        
+        assert(SecurePage.flashAlert.isExisting() === true)   // Check for the presence of the Flash element
+        
+        assert(SecurePage.flashAlert.getText().includes(`You logged into a secure area!`) === true)  // Check the content of a Flash element
     });
 
     // // test case 2
