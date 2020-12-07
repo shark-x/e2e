@@ -1,0 +1,31 @@
+{
+  "name": "e2e",
+  "version": "1.0.0",
+  "description": "This is base environment for fast start to write e2e autotest on node.js and wdio fraemwork",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/wdio ./wdio.conf.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shark-x/e2e.git"
+  },
+  "keywords": [],
+  "author": "@shark-x",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shark-x/e2e/issues"
+  },
+  "homepage": "https://github.com/shark-x/e2e#readme",
+  "devDependencies": {
+    "@wdio/cli": "^6.10.5",
+    "@wdio/local-runner": "^6.10.5",
+    "@wdio/mocha-framework": "^6.10.4",
+    "@wdio/selenium-standalone-service": "^6.10.4",
+    "@wdio/spec-reporter": "^6.8.1",
+    "chai": "^4.2.0"
+  },
+  "dependencies": {
+    "@wdio/sync": "^6.10.4"
+  }
+}
