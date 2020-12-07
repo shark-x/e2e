@@ -22,7 +22,7 @@ Run a test case to verify that the installation was successful
 
 ## Quick Started
 
-### Description test "test/specs/example.e2e.js"
+### Description test case "test/specs/example.e2e.js"
 
 Next code is Test suite "My Login application" witch contains one test "should login with valid credentials". This test case checks succeeded user login.
 
@@ -45,10 +45,10 @@ Fourth line checks if the Flash element contains the text "You have entered the 
 
 ### Write your first test.
 
-- Open file test/specs/example.e2e.js. This is test suites file.
+- Open test suite test/specs/example.e2e.js.
 - Uncomment 16-27 lines.
 - Add test case name in first "it" parameters. Write 'login with not valid credentials'
-- In the second "it" parameter, add a test step after each comment.
+- In the second "it" parameter add a test step after each comment.
     
     it('', ()=>{
 
