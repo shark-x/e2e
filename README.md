@@ -30,8 +30,10 @@ const LoginPage = require('../pageobjects/login.page');    // import LoginPage c
 const SecurePage = require('../pageobjects/secure.page');  // import SecurePage class
 const assert = require('chai').assert                      // import assertion method from chai library
 
+// test suite
 describe('My Login application', () => {
 
+    // test case 1
     it('should login with valid credentials', () => {
         
         LoginPage.open();  // Opens Login Page
