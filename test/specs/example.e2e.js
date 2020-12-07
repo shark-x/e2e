@@ -2,9 +2,10 @@ const LoginPage = require('../pageobjects/login.page');
 const SecurePage = require('../pageobjects/secure.page');
 const assert = require('chai').assert
 
-
+// test suite
 describe('My Login application', () => {
     
+    // test case 1
     it('should login with valid credentials', () => {
         LoginPage.open();
 
@@ -15,7 +16,7 @@ describe('My Login application', () => {
         assert(SecurePage.flashAlert.getText().includes(`You logged into a secure area!`) === true)
     });
 
-    // // next test case
+    // // test case 2
     // it('', ()=>{
 
     //     // 1. Open LoginPage

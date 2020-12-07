@@ -49,7 +49,7 @@ describe('My Login application', () => {
 ### Write your first test.
 
 - Open test suite test/specs/example.e2e.js.
-- Uncomment 18-29 lines.
+- Uncomment 19-30 lines.
 - Add test case name in first "it" parameter. Write 'login with not valid credentials'
 - In the second "it" parameter add a test step after each comment.    
 - Run test
